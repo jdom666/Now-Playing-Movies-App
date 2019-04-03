@@ -1,20 +1,5 @@
 window.addEventListener('load', ()=>
 {
-    /*      
-    const aapi = `https://api.themoviedb.org/3/movie/latest?api_key=28a5adbca70e26fdd712868dc9930ed3&language=en-US`; 
-
-    fetch(aapi)
-    .then(ressponse => ressponse.json())
-    .then
-    (
-        dataa =>
-        {
-            console.log(dataa);
-            const movieID = dataa.imdb_id;
-            console.log(movieID);
-        }
-    );
-    */
     const api = `http://www.omdbapi.com/?i=tt0448115&apikey=a7d7024f`; //`http:"//www.omdbapi.com/?i=tt2583620&apikey=a7d7024f"`;    //
 
     fetch(api)
