@@ -1,0 +1,176 @@
+/*------ Global ------*/
+*
+{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    vertical-align: baseline;
+}
+:root
+{
+    --main-black: #1E202B;
+    --main-blue: #08AEEA;
+    --main-green: #2AF598;
+    --main-gradient: linear-graident(to right, var (--main-blue), var (--main-green));
+}
+html
+{
+    font-family: Source Sans Pro, sans-serif;
+}
+body
+{
+    width: 100%;
+    background-color: white;
+}
+h1
+{
+    font-size: 48px;
+    font-weight: 700;
+    color: var(--mian-black);
+}
+h2
+{
+    font-size: 36px;
+    font-weight: 700;
+    color: var(--main-black);
+}
+p, li
+{
+    font-size: 16px;
+    font-weight: 400px;
+    color: var(--main-black);
+}
+.btnWhite
+{
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    width: 200px;
+    height: 60px;
+    line-height: 60px;
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 50px;
+    background: #F8D353;
+    background: -webkit-linear-gradient(top left, #F8D353, #FF5C5A);
+    background: -moz-linear-gradient(top left, #F8D353, #FF5C5A);
+    background: linear-gradient(top left, #F8D353, #FF5C5A);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.btnGroup
+{
+    position: relative;
+    z-index: 1;
+    
+}
+.whiteBG
+{
+    background-color: white;
+    display: block;
+    height: 60px;
+    width: 200px;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    border-radius: 3px;
+}
+
+/*------ Header/Nov ------*/
+nav
+{
+    display: inline-block;
+    width: 100%;
+}
+nav a
+{
+    color: white;
+    text-decoration: none;
+    line-height: 100px;
+}
+.logo
+{
+    font-weight: 500;
+    font-size: 25px;
+    letter-spacing: 2px;
+}
+nav ul
+{
+    float: right;
+    list-style: none;
+}
+nav ul li
+{
+    display: inline-block;
+    margin-left: 50px;
+}
+header h1
+{
+    color: white;
+    width: 45%;
+    margin: 90px 0 40px 0;
+}
+header p
+{
+    color: white;
+    margin-bottom: 40px;
+    opacity: 0.9;
+    width: 30%;
+}
+header
+{
+    background-image: radial-gradient( circle farthest-corner at 24.1% 68.8%,  rgba(50,50,50,1) 0%, rgba(0,0,0,1) 99.4% );
+    background-repeat: on-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    min-height: 900px;
+    width: 90%;
+    padding: 0 5%;
+    position: relative;
+}
+.poster img
+{
+    position: absolute;
+    right: 300px;
+    bottom: 300px;
+    border-radius: 5px;
+    float: center;
+}
+
+
+/*------ Responsive ------*/
+@media only screen and (max-width: 1250px)
+{
+    .poster img
+    {
+        right: 250px;
+        bottom: 250px;
+        border-radius: 5px;
+        float: center;
+    }
+}
+
+@media only screen and (max-width: 1000px)
+{
+    .poster img
+    {
+        right: 200px;
+        bottom: 250px;
+        border-radius: 5px;
+        float: center;
+    }
+}
+
+@media only screen and (max-width: 900px)
+{
+    .poster img
+    {
+        right: 150px;
+        bottom: 250px;
+        border-radius: 5px;
+        float: center;
+    }
+}
