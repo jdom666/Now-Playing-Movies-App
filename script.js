@@ -1,6 +1,6 @@
 window.addEventListener('load', ()=>
 {
-    const api = `http:"//www.omdbapi.com/?i=tt2583620&apikey=a7d7024f"`; 
+    const api = `https:"//www.omdbapi.com/?i=tt2583620&apikey=a7d7024f"`; 
 
     fetch(api)
     .then(response => response.json())
