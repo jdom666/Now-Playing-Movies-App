@@ -14,7 +14,7 @@ window.addEventListener('load', ()=>
             document.getElementById('movie-overview').innerHTML = data.Plot;
             document.getElementById('movie-poster').innerHTML = `<img src="${data.Poster}">`;  
             document.getElementById('order').innerHTML = `
-                                                            <a href="${data.Website}" class="btnWhite">Watch Trailer</a>
+                                                            <a href="${data.Website}" class="btnWhite">Preview</a>
                                                             <div class="whiteBG"></div>
                                                         `;
         }
